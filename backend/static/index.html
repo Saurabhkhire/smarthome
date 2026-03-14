@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aria · Real estate chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">◆</span>
+        <div>
+          <strong>Aria</strong>
+          <small>Listings from your scraper</small>
+        </div>
+      </div>
+      <p class="hint">Ask in plain English. Try: <em>2br under 3500 in San Francisco</em></p>
+      <div id="listing-panel" class="listing-panel"></div>
+    </aside>
+    <main class="chat-main">
+      <header class="topbar">
+        <span id="session-label">Session</span>
+        <button type="button" id="btn-clear" class="ghost">New chat</button>
+      </header>
+      <div id="messages" class="messages"></div>
+      <form id="form" class="composer">
+        <textarea id="input" rows="1" placeholder="Message Aria…" autocomplete="off"></textarea>
+        <button type="submit" class="send">Send</button>
+      </form>
+    </main>
+  </div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
